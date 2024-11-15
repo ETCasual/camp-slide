@@ -22,7 +22,6 @@ type ImageType = {
 };
 
 export default function Home() {
-  // Queries
   const { data } = useQuery<{ assets: ImageType[] }>({
     queryKey: ["slides"],
     queryFn: async () => {
